@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Optionally, add custom styles below */
 body {
   background: #f5f8fa;
 }
