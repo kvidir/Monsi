@@ -24,4 +24,35 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+/* Custom utility classes */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/* Responsive utilities */
+@media (min-width: 640px) {
+  .sm\:text-left {
+    text-align: left;
+  }
+}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1f2937; /* Tailwind's gray-800 */
+    color: #e5e7eb; /* Tailwind's gray-200 */
+  }
+  a {
+    color: #60a5fa; /* Tailwind's blue-400 */
+  }
+}
+/* Add any additional global styles here */
+/* Example: Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Tailwind's gray-300 */
+  border-radius: 4px;
+}
